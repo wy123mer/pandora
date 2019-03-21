@@ -1,0 +1,540 @@
+@charset "utf-8";
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, ol, ul, dl, dd, p, input, select, textarea, td {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑";
+    position: relative;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+nav{
+    width:100%;
+    height:159px;
+    box-shadow: 0 2px 2px 0 rgba(48,37,52,.2);
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: white;
+    z-index: 99;
+}
+.top{
+    border-bottom: solid 1px #e5e5e5;
+    width: 100%;
+}
+.nav_top{
+    width:1130px;
+    height:48px;
+    margin:0 auto;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.log{
+    position: relative;
+}
+.nav_top .denglu{
+    border: solid 1px #e5e5e5;
+    width:200px;
+    height:180px;
+    background: white;
+    position: absolute;
+    right:-105px;
+    top:35px;
+    z-index: 20;
+    padding: 20px;
+}
+.denglu a {
+    display: block;
+    margin-top:10px;
+}
+.denglu .deng{
+    height:30px;
+    background:#333;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+.denglu .square{
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    background-color: white;
+    border-left: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
+    position: absolute;
+    left: 115px;
+    top: -9px;
+}
+.denglu .zhu{
+    height:30px;
+    border: 1px solid #333;
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    line-height: 30px;
+}
+.denglu .zhu:hover{
+    background:#333;
+    color:white;
+}
+.denglu .want{
+    text-align: center;
+    font-size: 12px;
+    text-decoration:underline;
+}
+.denglu .want:hover{
+    text-decoration: none;
+}
+.denglu .desire{
+    margin: 20px;
+    font-size: 12px;
+}
+.search{
+    width:260px;
+    height:40px;
+    border:1px solid black;
+    display: flex;
+    float: left;
+}
+.logo{
+    margin-left: 200px;
+}
+.search input{
+    border: 0;
+    width:220px;
+}
+.search input:focus{
+    outline:0;
+}
+.login{
+    width:200px;
+    float:right;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login span{
+    font-size: 12px;
+    color:#333;
+    line-height: 22px;
+}
+.nav_bottom{
+    padding-top: 10px;
+    height:40px;
+    width:960px;
+    display:flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.nav_bottom li{
+    position: relative;
+    padding: 10px 15px;
+    border-bottom: 0;
+    font-size: 12px;
+    background-color: white;
+    border:1px solid white;
+}
+.nav_bottom .newShop{
+    width:450px;
+    height:250px;
+    padding:10px;
+    box-sizing: border-box;
+    position: absolute;
+    left:0;
+    top:38px;
+    border: 1px solid #e5e5e5;
+    z-index: 10;
+    background-color: white;
+}
+.newShop a{
+    display: block;
+    width:200px;
+    color: #706d75;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #706d75;;
+}
+.newShop img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.groom{
+    width:450px;
+    height:230px;
+    padding:10px;
+    position: absolute;
+    left:0;
+    top:38px;
+    border: 1px solid #e5e5e5;
+    z-index: 10;
+    background-color: white;
+}
+.groom a{
+    color: #706d75;
+    display: block;
+    width:200px;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #706d75;
+}
+.groom img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.String{
+    width:900px;
+    height:300px;
+    padding:10px;
+    z-index: 10;
+    position: absolute;
+    left:-235px;
+    top:38px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+}
+.left{
+    width:240px;
+    height:300px;
+    float: left;
+    border-right: 1px solid #e5e5e5;
+}
+.left a{
+    display: block;
+    width:220px;
+    color: #706d75;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #706d75;
+}
+.middle a{
+    display: block;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-right: 60px;
+    line-height: 25px;
+}
+.middle{
+    margin: 20px;
+    display: flex;
+    position: relative;
+}
+.bottom{
+    position: absolute;
+    left: 0px;
+    bottom: -130px;
+}
+.bottom a{
+    display: inline-block;
+    margin-right: 10px;
+}
+.String img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.Bracelet{
+    width:570px;
+    height:290px;
+    padding:10px;
+    z-index: 10;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+    position: absolute;
+    left:-235px;
+    top:38px;
+}
+.Bra{
+    float:left;
+    margin-left:25px;
+    position: relative;
+}
+.Bra a{
+    display: block;
+    line-height: 20px;
+}
+.Bracelet img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.shoper{
+    width:440px;
+    height:400px;
+    padding:10px;
+    z-index: 10;
+    position: absolute;
+    left:-235px;
+    top:38px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+}
+.shoper a{
+    display: block;
+    width:220px;
+    color: #706d75;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #706d75;
+}
+.shoper img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.gift{
+    width:630px;
+    height:320px;
+    padding:10px;
+    z-index: 10;
+    position: absolute;
+    left:-510px;
+    top:38px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+}
+.gift img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+.gift h2{
+    font-weight: 300;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+    color:#e5e5e5;
+}
+.inspiration{
+    width:440px;
+    height:240px;
+    padding:10px;
+    z-index: 10;
+    position: absolute;
+    left:-410px;
+    top:38px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+}
+.inspiration a{
+    display: block;
+    width:220px;
+    color: #706d75;
+    font-size: 13px;
+    margin-left: 10px;
+    line-height: 30px;
+    border-bottom: 1px solid #706d75;
+}
+.inspiration img{
+    position: absolute;
+    right:10px;
+    top:10px;
+}
+/*section*/
+
+section{
+    width:760px;
+    height:620px;
+    margin: 0 auto;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    padding:50px 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 2px 0 rgba(48,37,52,.2);
+    margin-top: 159px;
+    display: flex;
+}
+.register{
+    width:260px;
+    margin-right: 130px;
+}
+.register p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.register input{
+    width:260px;
+    height:30px;
+    border: 0;
+    border-bottom: 1px solid black;
+}
+.register .error{
+    width:260px;
+    height:20px;
+    font-size: 14px;
+    line-height: 20px;
+    color:red;
+}
+.register input:focus{
+    outline: 0;
+}
+.register .sex {
+    width: 30px;
+    height: 20px;
+    vertical-align: middle;
+}
+.sexs span{
+    line-height: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+.yes,.do{
+    width:260px;
+    height:30px;
+    padding-top: 10px;
+}
+.yes input,.do input{
+    vertical-align: middle;
+}
+.yes span,.do span{
+    font-size: 13px;
+    vertical-align: middle;
+}
+.do span a{
+    text-decoration: underline;
+}
+body input[type="checkbox"] {
+    -webkit-appearance: none;  /*清除复选框默认样式*/
+    background: white;   /*复选框的背景图，就是上图*/
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    outline: none; /*去掉自带的边框*/
+    border: 1px solid #d4d8d8;
+}
+body input[type="checkbox"]:checked {
+    -webkit-appearance: none;  /*清除复选框默认样式*/
+    background: url(../img/10.png) no-repeat;
+    background-size: 100% 100%;
+    width: 22px;
+    height: 22px;
+    vertical-align: middle;
+    outline: none;
+}
+.suceess{
+    display: block;
+    width:260px;
+    height:50px;
+    background-color: #333;
+    line-height: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+.img{
+    position: relative;
+}
+.img p{
+    font-size: 24px;
+    color:#333;
+    position: absolute;
+    left:100px;
+    top:50px;
+}
+.img span{
+    display: block;
+    width:250px;
+    font-size: 12px;
+    color:#333;
+    position: absolute;
+    left:55px;
+    top:100px;
+    text-align: center;
+}
+/*end*/
+.end{
+    width:100%;
+    border-top: 5px solid #eee;
+}
+.end .box{
+    width:960px;
+    margin:0 auto;
+    display: flex;
+    padding-top:40px;
+    padding-bottom: 40px;
+}
+.box .email{
+    margin-right: 150px;
+}
+.email h5{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.email p{
+    font-size: 22px;
+    line-height: 50px;
+}
+.email_l input{
+    width:260px;
+    height:30px;
+    border: 0;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+}
+.email_l input:focus{
+    outline: 0;
+}
+.email_l  p{
+    width:260px;
+    height:50px;
+    font-size: 14px;
+    line-height: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+/*footer*/
+.foot{
+    width:100%;
+    height:250px;
+    background: #453c49;
+}
+.footer{
+    width:960px;
+    margin:0 auto;
+}
+.foo{
+    width:230px;
+    float:left;
+}
+.foo p{
+    font-size: 14px;
+    font-weight: 800;
+    margin-top: 20px;
+    color:white;
+    margin-bottom: 10px;
+}
+.foo a{
+    font-size: 12px;
+    color:white;
+    display: block;
+}
+.foo a:hover{
+    text-decoration: underline;
+}
+.c{
+    width:960px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #333;
+}
+.fo{
+    width:100%;
+    height: 42px;
+    background-color: #eeeeee;
+}
+

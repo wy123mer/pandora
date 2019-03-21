@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input class="checkAllBtn" type="checkbox" name="">全<br>
+	<input class="check" type="checkbox" name="">单<br>
+	<input class="check" type="checkbox" name="">单<br>
+	<input  class="checkAllBtn"  type="checkbox" name="">全
+</body>
+</html>
+<script src="js/jquery-1.11.3.js"></script>
+<script type="text/javascript">
+	
+	$.fn.extend({
+		checkAll:function(isCheck){
+			this.each(function(){
+				this.checked=isCheck;
+				
+			})
+		}
+	})
+
+
+
+  $(function(){
+
+  	
+        $(".checkAllBtn").click(function(){
+            $(".check").checkAll(this.checked);
+			$(".checkAllBtn").checkAll(this.checked);	
+        });
+    // $(".check").click(function(){
+    //     if($(".check").is(":checked")==true){       	
+        	
+    //     }else{
+    //         $(".zongmoney").html("0");
+    //     }
+    // })
+    $(".check").on("click", function() {
+        var i = 0;
+        $(".check").each(function(){
+            var i=$(".check").length;
+            if ($(this).checked == false) {
+                $(".checkAllBtn").checked = false;
+            } else {
+                // 如果是选中的，累加，和全部长度比较
+                if (i) {
+                    $(".checkAllBtn").checkAll(this.checked);
+                }
+            }
+
+        })
+      
+    });
+});
+</script>
